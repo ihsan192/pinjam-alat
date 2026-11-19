@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { ArrowLeft } from 'lucide-react' // 1. Impor ikon panah
 import { useStore } from '@/lib/store'
 import { toast } from '@/lib/toast'
 import { Button, inputCls } from '@/components/ui'
@@ -27,7 +28,18 @@ export default function AuthForm({ register }) {
   return (
     <div className="grid min-h-screen place-items-center p-4">
       <form onSubmit={submit} className="w-full max-w-sm rounded-2xl bg-white p-6 ring-1 ring-slate-200">
-        <Link href="/" className="font-display text-xl font-extrabold text-indigo-600">PinjamAlat</Link>
+        {/* 2. Tambahkan tombol panah kembali di samping logo */}
+        <div className="flex items-center gap-2">
+          <Link 
+            href="/" 
+            className="p-1 -ml-1 rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-800 transition-colors"
+            title="Kembali ke Beranda"
+          >
+            <ArrowLeft className="h-5 w-5" />
+          </Link>
+          <span className="font-display text-xl font-extrabold text-indigo-600">PinjamAlat</span>
+        </div>
+
         <h1 className="mt-4 font-display text-2xl font-bold">{register ? 'Buat akun siswa' : 'Masuk ke akunmu'}</h1>
         <div className="mt-4 space-y-3">
           <input name="name" className={inputCls} placeholder="Nama lengkap" autoComplete="username" />
