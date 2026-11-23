@@ -9,7 +9,7 @@ npm run dev      # http://localhost:3000
 ```
 
 ## Akun contoh
-- Siswa: Muhammad Ihsan / siswa123
+- Siswa: Muhammad Ihsan / ihsan123
 - Admin: Bu Ratna / admin123
 
 ## Struktur
