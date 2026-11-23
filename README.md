@@ -9,8 +9,8 @@ npm run dev      # http://localhost:3000
 ```
 
 ## Akun contoh
-- Siswa: siswa@sekolah.id / siswa123
-- Admin: admin@sekolah.id / admin123
+- Siswa: Muhammad Ihsan / siswa123
+- Admin: Bu Ratna / admin123
 
 ## Struktur
 - `middleware.js` – Role-Based Access Control (cookie `pa_role`)
